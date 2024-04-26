@@ -1,3 +1,105 @@
-*{
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+
+    /* background-image: radial-gradient(circle, #608548, #63854e, #668553, #698459, #6c845e, #667c59, #607354, #5a6b4f, #4a5a40, #3a4931, #2b3923, #1c2a15); */
+    background-image: url('./3D-dollar-bag/Midnight\ City.jpg');    
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+    --first-color: #6d7a6681;
+    --sec-color: #84bb65;
+    --third-color: #ddf2d0;
+    --fourth-color: #BB9A65;
+    --fifth-color: #FAFAFA;
+    --sixth-color: #7A7A7A;
+    --eigth-color: #695649;
+    --ninth-color: #534741;
+}
+
+/*NAVBAR STYLING STARTING HERE*/
+
+.dollar-logo {
+    height: 130px;
+    width: 130px;
+}
+.dollar-logo-img{
+    animation: slider 1s ease-in-out forwards;
+}
+@keyframes slider {
+    
+    from{transform: translateX(-300px);}
+    to{transform: translateX(0px);}
+}
+
+#navbar-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.navbar-icones>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+    gap: 6rem;
+}
+
+.navbar-icones>ul>li>a {
+    color: var(--sec-color);
+    text-decoration: none;
+}
+
+.navbar-icones{
+    animation: slider2 1.5s ease-in-out forwards;
+}
+@keyframes slider2 {
+    from{transform: translateY(-300px);}
+    to{transform: translateY(0px);}
+}
+.glass-efc{
+    background-color: var(--first-color);
+    padding: 0.3rem 1.3rem;
+    border-radius: 15px;
+   
+    align-self: center;
+    align-content: center;
+    border: 1px solid var(--third-color);
+}
+
+
+
+.login-section {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-size: 2rem;
+    color: var(--sec-color);
+    animation: slider3 1s ease-in-out forwards;
+}
+@keyframes slider3 {
+    from{transform: translateX(150%);}
+    to{transform: translateX(0px);}
+}
+
+.login-section>a {
+    text-align: center;
+    color: var(--third-color);
+    text-decoration: none;
+    font-family: "Federant", serif;
+    /* font-family: "Asset", serif; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
 }
